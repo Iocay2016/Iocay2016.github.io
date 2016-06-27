@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en-us"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>见见的空间</title><meta name="description"><meta name="generator" content="见见的空间"><meta name="author" content="Iocay"><meta name="keywords" content="sjaak van den berg, svdb, bitcoin, crypto, payment, integration, bitcoins, wordpress, betaling, webshop, front end, design, ontwerp, developer"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=0"><link rel="stylesheet" type="text/css" href="/styles/screen.css"><link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png"><link rel="icon" type="image/png" sizes="160x160" href="/images/favicon-160x160.png"><link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png"><meta name="msapplication-TileColor" content="#121315"><meta name="msapplication-TileImage" content="/images/mstile-144x144.png"></head><body itemscope itemtype="https://schema.org/WebPage"><header itemscope itemtype="https://schema.org/WPHeader"><a href="/"><img src="/images/mao.png" alt="见见的空间" title="见见的空间"></a><h1><a href="/" alt="见见的空间" title="见见的空间" itemprop="headline">见见的空间</a></h1><p itemprop="description"></p><nav itemscope itemtype="https://schema.org/SiteNavigationElement"><ul><li itemprop="name"><a href="/" alt="可爱的小家" title="可爱的小家" itemprop="url">可爱的小家</a></li><li itemprop="name"><a href="/archives" alt="时光机" title="时光机" itemprop="url">时光机</a></li><li itemprop="name"><a href="/tags" alt="tags" title="tags" itemprop="url">tags</a></li></ul></nav><div class="space"></div></header><main itemscope itemtype="https://schema.org/Blog"><article class="full"><h1 itemprop="headline"></h1><span class="post-meta">Published on<time itemprop="datePublished" datetime="2016-06-27T02:07:55.633Z"> Monday, June 27th 2016 at 10:07</time><br>Last updated on<time itemprop="dateModified" datetime="2016-06-27T02:07:55.633Z"> Monday, June 27th 2016 at 10:08</time></span><p>Cookielib</p>
+<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><p>import urllib2<br>import cookielib<br>“””</p>
+<p>#��ȡCookie���浽����</p>
+<p>#����һ��CookieJar����ʵ��������cookie<br>cookie = cookielib.CookieJar()</p>
+<p>#����urllib2����HTTPCookieProcessor����������cookie������<br>handler = urllib2.HTTPCookieProcessor(cookie)</p>
+<p>#ͨ��handler������opener<br>opener = urllib2.build_opener(handler)</p>
+<p>#�˴���open����ͬurllib2��urlopen������Ҳ���Դ���request<br>response = opener.open(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)<br>for item in cookie:<br>    print ‘Name = ‘+item.name<br>    print ‘Value = ‘+item.value<br>“””<br>“””</p>
+<p>#����Cookie���ļ�</p>
+<p>#���ñ���cookie���ļ���ͬ��Ŀ¼�µ�cookie.txt<br>filename = ‘cookie.txt’</p>
+<p>#����һ��MozillaCookieJar����ʵ��������cookie��֮��д���ļ�<br>cookie = cookielib.MozillaCookieJar(filename)</p>
+<p>#����urllib2����HTTPCookieProcessor����������cookie������<br>handler = urllib2.HTTPCookieProcessor(cookie)</p>
+<p>#ͨ��handler������opener<br>opener = urllib2.build_opener(handler)</p>
+<p>#����һ��������ԭ��ͬurllib2��urlopen<br>response = opener.open(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)</p>
+<p>#����cookie���ļ�<br>cookie.save(ignore_discard=True,ignore_expires=True)<br>“””<br>“””</p>
+<p>#���ļ��л�ȡCookie������</p>
+<p>#����MozillaCookieJarʵ������<br>cookie = cookielib.MozillaCookieJar()</p>
+<p>#���ļ��ж�ȡcookie���ݵ�����<br>cookie.load(‘cookie.txt’,ignore_discard=True,ignore_expires=True)</p>
+<p>#����������request<br>request = urllib2.Request(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)</p>
+<p>#����urllib2��build_opener��������һ��opener<br>opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))<br>response = opener.open(request)<br>print response.read()<br>“””<br>“””</p>
+<p>#����cookieģ����վ��¼<br>filename = ‘cookie.txt’</p>
+<p>#����һ��MozillaCookieJar����ʵ��������cookie��֮��д���ļ�<br>cookie = cookielib.MozillaCookieJar(filename)<br>opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))<br>postdata = urllib.urlencode({<br>    ‘stuid’:’201200131012’,<br>    ‘pwd’:’23342321’<br>})</p>
+<p>#��½����ϵͳ��URL<br>loginUrl = ‘<a href="http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bks_login2.login" target="_blank" rel="external">http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bks_login2.login</a>‘</p>
+<p>#ģ����½������cookie���浽����<br>result = opener.open(loginUrl,postdata)</p>
+<p>#����cookie��cookie.txt��<br>cookie.save(ignore_discard=True,ignore_expires=True)</p>
+<p>#����cookie����������һ����ַ������ַ�ǳɼ���ѯ��ַ<br>gradeUrl = ‘<a href="http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre" target="_blank" rel="external">http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre</a>‘</p>
+<p>#�������ʳɼ���ѯ��ַ<br>result = opener.open(gradeUrl)<br>print result.read()<br>“””</p>
+</article></main><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+e.src='//www.google-analytics.com/analytics.js';
+r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-78918255-1');ga('send','pageview');</script></body></html>
