@@ -1664,7 +1664,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #734970;
+  background: #993b20;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2407,15 +2407,6 @@ body {
 }
 .sidebar-position-right .footer-inner:before {
   float: right;
-}
-header {
-  width: 90%;
-}
-.container .main-inner {
-  width: 90%;
-}
-.content-wrap {
-  width: calc(100% - 260px);
 }
 .site-meta {
   padding: 20px 0;
