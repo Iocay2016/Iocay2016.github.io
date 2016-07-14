@@ -291,11 +291,12 @@
 
       
         
-          
-            <p>编写一个程序，读取邮箱数据，当遇到一个以From开头的文本行，使用split函数将该行子分解成单词。我们需要抽取From开头的行中第二个单词，即发信人<br>From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008<br>解析以From开头的行，打印出每行中第二个单词，还可以统计发信人数，在结尾输出总数。</p>
-<p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">fname = raw_input(&quot;Enter file name: &quot;)</span><br><span class="line">if len(fname) &lt; 1 : fname = &quot;mbox-short.txt&quot;</span><br><span class="line">fh = open(fname)</span><br><span class="line">count = 0</span><br><span class="line">for line in fh:</span><br><span class="line">   	line = line.rstrip()</span><br><span class="line">   	if not line.startswith(&apos;From &apos;) : continue</span><br><span class="line">   	words = line.split()</span><br><span class="line">   	count = count + 1</span><br><span class="line">   	print words[1]</span><br><span class="line">print &quot;There were&quot;, count, &quot;lines in the file with From as the first word&quot;</span><br></pre></td></tr></table></figure></p>
-
-          
+          <p>编写一个程序，读取邮箱数据，当遇到一个以From开头的文本行，使用split函数将该行子分解成单词。我们需要抽取From开头的行中第二个单词，即发信人<br>From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008<br>解析以From开头的行，打印出每行中第二个单词，还可以统计发信人数，在结尾输出总数。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/12/Assignment 8.5/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -485,7 +486,7 @@
           
             <p>spamave</p>
 <p>编写一个程序，让用户输入文件名，然后读取文件，按行的形式进行查看</p>
-<p>代码如下：<br>fname = raw_input(‘Enter the file name: ‘)<br>try:<br>    fhand = open(fname)<br>except:<br>    print ‘File cannot be opened:’, fname<br>    exit()<br>count = 0<br>total = 0<br>for line in fhand:<br>    words = line.split()<br>    if len(words) != 2 : continue<br>    if words[0] != ‘X-DSPAM-Confidence:’ : continue<br>    try:<br>        conf = float(words[1])<br>    except:<br>        continue<br>    count = count + 1<br>    total = total + conf<br>average = total / count<br>print ‘Average spam confidence:’, average</p>
+<p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">fname = raw_input(&apos;Enter the file name: &apos;)</span><br><span class="line">try:</span><br><span class="line">    fhand = open(fname)</span><br><span class="line">except:</span><br><span class="line">    print &apos;File cannot be opened:&apos;, fname</span><br><span class="line">    exit()</span><br><span class="line">count = 0</span><br><span class="line">total = 0</span><br><span class="line">for line in fhand:</span><br><span class="line">    words = line.split()</span><br><span class="line">    if len(words) != 2 : continue</span><br><span class="line">    if words[0] != &apos;X-DSPAM-Confidence:&apos; : continue</span><br><span class="line">    try:</span><br><span class="line">        conf = float(words[1])</span><br><span class="line">    except:</span><br><span class="line">        continue</span><br><span class="line">    count = count + 1</span><br><span class="line">    total = total + conf</span><br><span class="line">average = total / count</span><br><span class="line">print &apos;Average spam confidence:&apos;, average</span><br></pre></td></tr></table></figure></p>
 
           
         

@@ -86,20 +86,20 @@
 
 <meta name="description" content="spamave
 编写一个程序，让用户输入文件名，然后读取文件，按行的形式进行查看
-代码如下：fname = raw_input(‘Enter the file name: ‘)try:    fhand = open(fname)except:    print ‘File cannot be opened:’, fname    exit()count = 0total = 0for line">
+代码如下：1234567891011121314151617181920fname = raw_input(&amp;apos;Enter the file name: &amp;apos;)try:    fhand = open(fname)except:    print &amp;apos;File cannot be opened">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Assignment 7.2">
 <meta property="og:url" content="http://yoursite.com/2016/07/10/Assignment 7.2/index.html">
 <meta property="og:site_name" content="见见的空间">
 <meta property="og:description" content="spamave
 编写一个程序，让用户输入文件名，然后读取文件，按行的形式进行查看
-代码如下：fname = raw_input(‘Enter the file name: ‘)try:    fhand = open(fname)except:    print ‘File cannot be opened:’, fname    exit()count = 0total = 0for line">
-<meta property="og:updated_time" content="2016-07-14T04:50:12.293Z">
+代码如下：1234567891011121314151617181920fname = raw_input(&amp;apos;Enter the file name: &amp;apos;)try:    fhand = open(fname)except:    print &amp;apos;File cannot be opened">
+<meta property="og:updated_time" content="2016-07-14T06:12:58.594Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Assignment 7.2">
 <meta name="twitter:description" content="spamave
 编写一个程序，让用户输入文件名，然后读取文件，按行的形式进行查看
-代码如下：fname = raw_input(‘Enter the file name: ‘)try:    fhand = open(fname)except:    print ‘File cannot be opened:’, fname    exit()count = 0total = 0for line">
+代码如下：1234567891011121314151617181920fname = raw_input(&amp;apos;Enter the file name: &amp;apos;)try:    fhand = open(fname)except:    print &amp;apos;File cannot be opened">
 
 
 
@@ -294,7 +294,7 @@
       
         <p>spamave</p>
 <p>编写一个程序，让用户输入文件名，然后读取文件，按行的形式进行查看</p>
-<p>代码如下：<br>fname = raw_input(‘Enter the file name: ‘)<br>try:<br>    fhand = open(fname)<br>except:<br>    print ‘File cannot be opened:’, fname<br>    exit()<br>count = 0<br>total = 0<br>for line in fhand:<br>    words = line.split()<br>    if len(words) != 2 : continue<br>    if words[0] != ‘X-DSPAM-Confidence:’ : continue<br>    try:<br>        conf = float(words[1])<br>    except:<br>        continue<br>    count = count + 1<br>    total = total + conf<br>average = total / count<br>print ‘Average spam confidence:’, average</p>
+<p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">fname = raw_input(&apos;Enter the file name: &apos;)</span><br><span class="line">try:</span><br><span class="line">    fhand = open(fname)</span><br><span class="line">except:</span><br><span class="line">    print &apos;File cannot be opened:&apos;, fname</span><br><span class="line">    exit()</span><br><span class="line">count = 0</span><br><span class="line">total = 0</span><br><span class="line">for line in fhand:</span><br><span class="line">    words = line.split()</span><br><span class="line">    if len(words) != 2 : continue</span><br><span class="line">    if words[0] != &apos;X-DSPAM-Confidence:&apos; : continue</span><br><span class="line">    try:</span><br><span class="line">        conf = float(words[1])</span><br><span class="line">    except:</span><br><span class="line">        continue</span><br><span class="line">    count = count + 1</span><br><span class="line">    total = total + conf</span><br><span class="line">average = total / count</span><br><span class="line">print &apos;Average spam confidence:&apos;, average</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
