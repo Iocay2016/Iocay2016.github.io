@@ -84,25 +84,31 @@
 
 
 
-<meta name="description" content="title: Assignment 8.4
-sorted
-编写一个程序，打开romeo.txt文件，按行读取。对每一行使用split函数，将其分解成一系列的单词列表。对于每一个单词，检查它是否已经存在于列表之中，若单词还未出现在列表中，把它添加进来按字母顺序输出最终的单词清单
-fname = raw_input(“Enter file name: “)fh = open(fname)text">
+<meta name="description" content="Cookielib
+代码如下：
+-- coding: utf-8 --import urllib2import cookielib
+#获取Cookie保存到变量
+#声明一个CookieJar对象实例来保存cookiecookie = cookielib.CookieJar()
+#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器handler = urllib">
 <meta property="og:type" content="article">
-<meta property="og:title" content="见见的空间">
-<meta property="og:url" content="http://yoursite.com/2016/07/13/Assignment 8.4/index.html">
+<meta property="og:title" content="Cookielib">
+<meta property="og:url" content="http://yoursite.com/2016/07/04/Cookielib/index.html">
 <meta property="og:site_name" content="见见的空间">
-<meta property="og:description" content="title: Assignment 8.4
-sorted
-编写一个程序，打开romeo.txt文件，按行读取。对每一行使用split函数，将其分解成一系列的单词列表。对于每一个单词，检查它是否已经存在于列表之中，若单词还未出现在列表中，把它添加进来按字母顺序输出最终的单词清单
-fname = raw_input(“Enter file name: “)fh = open(fname)text">
-<meta property="og:updated_time" content="2016-07-13T11:38:12.217Z">
+<meta property="og:description" content="Cookielib
+代码如下：
+-- coding: utf-8 --import urllib2import cookielib
+#获取Cookie保存到变量
+#声明一个CookieJar对象实例来保存cookiecookie = cookielib.CookieJar()
+#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器handler = urllib">
+<meta property="og:updated_time" content="2016-07-14T04:56:08.198Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="见见的空间">
-<meta name="twitter:description" content="title: Assignment 8.4
-sorted
-编写一个程序，打开romeo.txt文件，按行读取。对每一行使用split函数，将其分解成一系列的单词列表。对于每一个单词，检查它是否已经存在于列表之中，若单词还未出现在列表中，把它添加进来按字母顺序输出最终的单词清单
-fname = raw_input(“Enter file name: “)fh = open(fname)text">
+<meta name="twitter:title" content="Cookielib">
+<meta name="twitter:description" content="Cookielib
+代码如下：
+-- coding: utf-8 --import urllib2import cookielib
+#获取Cookie保存到变量
+#声明一个CookieJar对象实例来保存cookiecookie = cookielib.CookieJar()
+#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器handler = urllib">
 
 
 
@@ -123,9 +129,9 @@ fname = raw_input(“Enter file name: “)fh = open(fname)text">
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/07/13/Assignment 8.4/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/04/Cookielib/"/>
 
-  <title>  | 见见的空间 </title>
+  <title> Cookielib | 见见的空间 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -245,7 +251,7 @@ fname = raw_input(“Enter file name: “)fh = open(fname)text">
             
             
               
-                
+                Cookielib
               
             
           </h1>
@@ -257,8 +263,8 @@ fname = raw_input(“Enter file name: “)fh = open(fname)text">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-13T15:56:47+08:00" content="2016-07-13">
-              2016-07-13
+            <time itemprop="dateCreated" datetime="2016-07-04T22:46:25+08:00" content="2016-07-04">
+              2016-07-04
             </time>
           </span>
 
@@ -285,12 +291,34 @@ fname = raw_input(“Enter file name: “)fh = open(fname)text">
       
 
       
-        <hr>
-<h2 id="title-Assignment-8-4"><a href="#title-Assignment-8-4" class="headerlink" title=" title: Assignment 8.4"></a> title: Assignment 8.4</h2><blockquote>
-<p>sorted</p>
-<p>编写一个程序，打开romeo.txt文件，按行读取。对每一行使用split函数，将其分解成一系列的单词列表。对于每一个单词，检查它是否已经存在于列表之中，若单词还未出现在列表中，把它添加进来<br>按字母顺序输出最终的单词清单</p>
-<p>fname = raw_input(“Enter file name: “)<br>fh = open(fname)<br>text = fh.read()<br>words = text.split()<br>lst = list()<br>for word in words:<br>    lst.append(word)<br>lst = sorted(set(words))<br>print lst</p>
-</blockquote>
+        <p>Cookielib</p>
+<p>代码如下：</p>
+<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><p>import urllib2<br>import cookielib</p>
+<p>#获取Cookie保存到变量</p>
+<p>#声明一个CookieJar对象实例来保存cookie<br>cookie = cookielib.CookieJar()</p>
+<p>#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器<br>handler = urllib2.HTTPCookieProcessor(cookie)</p>
+<p>#通过handler来构建opener<br>opener = urllib2.build_opener(handler)</p>
+<p>#此处的open方法同urllib2的urlopen方法，也可以传入request<br>response = opener.open(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)<br>for item in cookie:<br>    print ‘Name = ‘+item.name<br>    print ‘Value = ‘+item.value</p>
+<p>#保存Cookie到文件</p>
+<p>#设置保存cookie的文件，同级目录下的cookie.txt<br>filename = ‘cookie.txt’</p>
+<p>#声明一个MozillaCookieJar对象实例来保存cookie，之后写入文件<br>cookie = cookielib.MozillaCookieJar(filename)</p>
+<p>#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器<br>handler = urllib2.HTTPCookieProcessor(cookie)</p>
+<p>#通过handler来构建opener<br>opener = urllib2.build_opener(handler)</p>
+<p>#创建一个请求，原理同urllib2的urlopen<br>response = opener.open(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)</p>
+<p>#保存cookie到文件<br>cookie.save(ignore_discard=True,ignore_expires=True)</p>
+<p>#从文件中获取Cookie并访问</p>
+<p>#创建MozillaCookieJar实例对象<br>cookie = cookielib.MozillaCookieJar()</p>
+<p>#从文件中读取cookie内容到变量<br>cookie.load(‘cookie.txt’,ignore_discard=True,ignore_expires=True)</p>
+<p>#创建请求的request<br>request = urllib2.Request(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)</p>
+<p>#利用urllib2的build_opener方法创建一个opener<br>opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))<br>response = opener.open(request)<br>print response.read()</p>
+<p>“””</p>
+<p>#利用cookie模拟网站登录<br>filename = ‘cookie.txt’</p>
+<p>#声明一个MozillaCookieJar对象实例来保存cookie，之后写入文件<br>cookie = cookielib.MozillaCookieJar(filename)<br>opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))<br>postdata = urllib.urlencode({<br>    ‘stuid’:’201200131012’,<br>    ‘pwd’:’23342321’<br>})</p>
+<p>#登陆教务系统的URL<br>loginUrl = ‘<a href="http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bks_login2.login" target="_blank" rel="external">http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bks_login2.login</a>‘</p>
+<p>#模拟登陆，并把cookie保存到变量<br>result = opener.open(loginUrl,postdata)</p>
+<p>#保存cookie到cookie.txt中<br>cookie.save(ignore_discard=True,ignore_expires=True)</p>
+<p>#利用cookie请求访问另一个网址，此网址是成绩查询网址<br>gradeUrl = ‘<a href="http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre" target="_blank" rel="external">http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre</a>‘</p>
+<p>#请求访问成绩查询网址<br>result = opener.open(gradeUrl)<br>print result.read()<br>“””</p>
 
       
     </div>
@@ -316,16 +344,16 @@ fname = raw_input(“Enter file name: “)fh = open(fname)text">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/12/Assignment 7.2/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2016/07/03/Python  0/" rel="next" title="practice 000">
+                <i class="fa fa-chevron-left"></i> practice 000
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/13/Assignment 8.5/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/07/05/Assignment 3.1/" rel="prev" title="Assignment 3.1">
+                Assignment 3.1 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -394,7 +422,7 @@ fname = raw_input(“Enter file name: “)fh = open(fname)text">
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">13</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -426,7 +454,7 @@ fname = raw_input(“Enter file name: “)fh = open(fname)text">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#title-Assignment-8-4"><span class="nav-number">1.</span> <span class="nav-text"> title: Assignment 8.4</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#coding-utf-8"><span class="nav-number">1.</span> <span class="nav-text">-- coding: utf-8 --</span></a></li></ol></div>
             
           </div>
         </section>

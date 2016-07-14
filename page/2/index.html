@@ -238,8 +238,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/07/04/weight/" itemprop="url">
-                  未命名
+                <a class="post-title-link" href="/2016/07/02/right-triangle/" itemprop="url">
+                  Assignment 2.3
                 </a>
               
             
@@ -252,8 +252,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-04T10:31:33+08:00" content="2016-07-04">
-              2016-07-04
+            <time itemprop="dateCreated" datetime="2016-07-02T22:46:25+08:00" content="2016-07-02">
+              2016-07-02
             </time>
           </span>
 
@@ -282,10 +282,8 @@
       
         
           
-            <hr>
-<h2 id="title-Assignment-4-6"><a href="#title-Assignment-4-6" class="headerlink" title=" title: Assignment 4.6"></a> title: Assignment 4.6</h2><blockquote>
-<p>重量转换器 g转为kg<br>代码如下：<br>def g2kg(g):<br>    return str(g/1000) + ‘kg’<br>print(g2kg(2000))</p>
-</blockquote>
+            <p>编写一个程序，求直角三角形斜边长</p>
+<p>代码如下：<br>def right_trianglses(a,b):<br>    return ‘The right triangle third side\’s length is {}’.format((a<strong>2 + b</strong>2)**0.5)<br>print(right_triangles(3,4))</p>
 
           
         
@@ -335,8 +333,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/06/27/Cookielib/" itemprop="url">
-                  未命名
+                <a class="post-title-link" href="/2016/07/01/weight/" itemprop="url">
+                  Assignment 2.2
                 </a>
               
             
@@ -349,8 +347,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-27T10:07:55+08:00" content="2016-06-27">
-              2016-06-27
+            <time itemprop="dateCreated" datetime="2016-07-01T22:46:25+08:00" content="2016-07-01">
+              2016-07-01
             </time>
           </span>
 
@@ -379,36 +377,8 @@
       
         
           
-            <hr>
-<h2 id="title-Cookielib"><a href="#title-Cookielib" class="headerlink" title=" title: Cookielib"></a> title: Cookielib</h2><blockquote>
-<p>Cookielib</p>
-<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><p>import urllib2<br>import cookielib</p>
-</blockquote>
-<p>#获取Cookie保存到变量</p>
-<p>#声明一个CookieJar对象实例来保存cookie<br>cookie = cookielib.CookieJar()</p>
-<p>#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器<br>handler = urllib2.HTTPCookieProcessor(cookie)</p>
-<p>#通过handler来构建opener<br>opener = urllib2.build_opener(handler)</p>
-<p>#此处的open方法同urllib2的urlopen方法，也可以传入request<br>response = opener.open(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)<br>for item in cookie:<br>    print ‘Name = ‘+item.name<br>    print ‘Value = ‘+item.value</p>
-<p>#保存Cookie到文件</p>
-<p>#设置保存cookie的文件，同级目录下的cookie.txt<br>filename = ‘cookie.txt’</p>
-<p>#声明一个MozillaCookieJar对象实例来保存cookie，之后写入文件<br>cookie = cookielib.MozillaCookieJar(filename)</p>
-<p>#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器<br>handler = urllib2.HTTPCookieProcessor(cookie)</p>
-<p>#通过handler来构建opener<br>opener = urllib2.build_opener(handler)</p>
-<p>#创建一个请求，原理同urllib2的urlopen<br>response = opener.open(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)</p>
-<p>#保存cookie到文件<br>cookie.save(ignore_discard=True,ignore_expires=True)</p>
-<p>#从文件中获取Cookie并访问</p>
-<p>#创建MozillaCookieJar实例对象<br>cookie = cookielib.MozillaCookieJar()</p>
-<p>#从文件中读取cookie内容到变量<br>cookie.load(‘cookie.txt’,ignore_discard=True,ignore_expires=True)</p>
-<p>#创建请求的request<br>request = urllib2.Request(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)</p>
-<p>#利用urllib2的build_opener方法创建一个opener<br>opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))<br>response = opener.open(request)<br>print response.read()</p>
-<p>“””</p>
-<p>#利用cookie模拟网站登录<br>filename = ‘cookie.txt’</p>
-<p>#声明一个MozillaCookieJar对象实例来保存cookie，之后写入文件<br>cookie = cookielib.MozillaCookieJar(filename)<br>opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))<br>postdata = urllib.urlencode({<br>    ‘stuid’:’201200131012’,<br>    ‘pwd’:’23342321’<br>})</p>
-<p>#登陆教务系统的URL<br>loginUrl = ‘<a href="http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bks_login2.login" target="_blank" rel="external">http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bks_login2.login</a>‘</p>
-<p>#模拟登陆，并把cookie保存到变量<br>result = opener.open(loginUrl,postdata)</p>
-<p>#保存cookie到cookie.txt中<br>cookie.save(ignore_discard=True,ignore_expires=True)</p>
-<p>#利用cookie请求访问另一个网址，此网址是成绩查询网址<br>gradeUrl = ‘<a href="http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre" target="_blank" rel="external">http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre</a>‘</p>
-<p>#请求访问成绩查询网址<br>result = opener.open(gradeUrl)<br>print result.read()<br>“””</p>
+            <p>重量转换器 g转为kg</p>
+<p>代码如下：<br>def g2kg(g):<br>    return str(g/1000) + ‘kg’<br>print(g2kg(2000))</p>
 
           
         
@@ -458,8 +428,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/06/23/Python  0/" itemprop="url">
-                  未命名
+                <a class="post-title-link" href="/2016/06/28/FirstNight/" itemprop="url">
+                  First Night
                 </a>
               
             
@@ -472,8 +442,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-23T10:30:49+08:00" content="2016-06-23">
-              2016-06-23
+            <time itemprop="dateCreated" datetime="2016-06-28T22:46:25+08:00" content="2016-06-28">
+              2016-06-28
             </time>
           </span>
 
@@ -502,118 +472,7 @@
       
         
           
-            <hr>
-<h2 id="title-practice-0"><a href="#title-practice-0" class="headerlink" title=" title: practice 0"></a> title: practice 0</h2><blockquote>
-<p>#练习册000</p>
-<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><p>from PIL import Image, ImageDraw, ImageFont, ImageColor<br>def add_num(img):</p>
-<pre><code># 创建一个Draw对象
-draw = ImageDraw.Draw(img)
-# 创建一个 Font
-myfont = ImageFont.truetype(&apos;C:/windows/fonts/Arial.ttf&apos;, size=40)
-fillcolor = ImageColor.colormap.get(&apos;red&apos;)
-width, height = img.size
-draw.text((width-30, 0), &apos;1&apos;, font=myfont, fill=fillcolor)
-img.save(&apos;result.jpg&apos;, &apos;jpeg&apos;)
-return 0
-</code></pre><p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    image = Image.open(‘test.jpg’)<br>    add_num(image)</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/06/11/FirstNight/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-11T16:09:58+08:00" content="2016-06-11">
-              2016-06-11
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <hr>
-<h2 id="title-First"><a href="#title-First" class="headerlink" title=" title: First"></a> title: First</h2><blockquote>
-<p>我有一头<strong>小毛驴</strong>，可是我从来都不骑</p>
-</blockquote>
+            <p>我有一头<strong>小毛驴</strong>，可是我从来都不骑</p>
 
           
         
@@ -687,7 +546,7 @@ return 0
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">13</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

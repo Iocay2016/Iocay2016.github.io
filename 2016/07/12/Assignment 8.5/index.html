@@ -84,34 +84,19 @@
 
 
 
-<meta name="description" content="title: Cookielib
-Cookielib
--- coding: utf-8 --import urllib2import cookielib
-
-#获取Cookie保存到变量
-#声明一个CookieJar对象实例来保存cookiecookie = cookielib.CookieJar()
-#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器ha">
+<meta name="description" content="编写一个程序，读取邮箱数据，当遇到一个以From开头的文本行，使用split函数将该行子分解成单词。我们需要抽取From开头的行中第二个单词，即发信人From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008解析以From开头的行，打印出每行中第二个单词，还可以统计发信人数，在结尾输出总数。
+代码如下：fname = raw_input(“Ent">
 <meta property="og:type" content="article">
-<meta property="og:title" content="见见的空间">
-<meta property="og:url" content="http://yoursite.com/2016/06/27/Cookielib/index.html">
+<meta property="og:title" content="Assignment 8.5">
+<meta property="og:url" content="http://yoursite.com/2016/07/12/Assignment 8.5/index.html">
 <meta property="og:site_name" content="见见的空间">
-<meta property="og:description" content="title: Cookielib
-Cookielib
--- coding: utf-8 --import urllib2import cookielib
-
-#获取Cookie保存到变量
-#声明一个CookieJar对象实例来保存cookiecookie = cookielib.CookieJar()
-#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器ha">
-<meta property="og:updated_time" content="2016-07-13T11:42:40.037Z">
+<meta property="og:description" content="编写一个程序，读取邮箱数据，当遇到一个以From开头的文本行，使用split函数将该行子分解成单词。我们需要抽取From开头的行中第二个单词，即发信人From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008解析以From开头的行，打印出每行中第二个单词，还可以统计发信人数，在结尾输出总数。
+代码如下：fname = raw_input(“Ent">
+<meta property="og:updated_time" content="2016-07-14T04:51:23.674Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="见见的空间">
-<meta name="twitter:description" content="title: Cookielib
-Cookielib
--- coding: utf-8 --import urllib2import cookielib
-
-#获取Cookie保存到变量
-#声明一个CookieJar对象实例来保存cookiecookie = cookielib.CookieJar()
-#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器ha">
+<meta name="twitter:title" content="Assignment 8.5">
+<meta name="twitter:description" content="编写一个程序，读取邮箱数据，当遇到一个以From开头的文本行，使用split函数将该行子分解成单词。我们需要抽取From开头的行中第二个单词，即发信人From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008解析以From开头的行，打印出每行中第二个单词，还可以统计发信人数，在结尾输出总数。
+代码如下：fname = raw_input(“Ent">
 
 
 
@@ -132,9 +117,9 @@ Cookielib
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/06/27/Cookielib/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/12/Assignment 8.5/"/>
 
-  <title>  | 见见的空间 </title>
+  <title> Assignment 8.5 | 见见的空间 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -254,7 +239,7 @@ Cookielib
             
             
               
-                
+                Assignment 8.5
               
             
           </h1>
@@ -266,8 +251,8 @@ Cookielib
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-27T10:07:55+08:00" content="2016-06-27">
-              2016-06-27
+            <time itemprop="dateCreated" datetime="2016-07-12T22:46:25+08:00" content="2016-07-12">
+              2016-07-12
             </time>
           </span>
 
@@ -294,36 +279,8 @@ Cookielib
       
 
       
-        <hr>
-<h2 id="title-Cookielib"><a href="#title-Cookielib" class="headerlink" title=" title: Cookielib"></a> title: Cookielib</h2><blockquote>
-<p>Cookielib</p>
-<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><p>import urllib2<br>import cookielib</p>
-</blockquote>
-<p>#获取Cookie保存到变量</p>
-<p>#声明一个CookieJar对象实例来保存cookie<br>cookie = cookielib.CookieJar()</p>
-<p>#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器<br>handler = urllib2.HTTPCookieProcessor(cookie)</p>
-<p>#通过handler来构建opener<br>opener = urllib2.build_opener(handler)</p>
-<p>#此处的open方法同urllib2的urlopen方法，也可以传入request<br>response = opener.open(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)<br>for item in cookie:<br>    print ‘Name = ‘+item.name<br>    print ‘Value = ‘+item.value</p>
-<p>#保存Cookie到文件</p>
-<p>#设置保存cookie的文件，同级目录下的cookie.txt<br>filename = ‘cookie.txt’</p>
-<p>#声明一个MozillaCookieJar对象实例来保存cookie，之后写入文件<br>cookie = cookielib.MozillaCookieJar(filename)</p>
-<p>#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器<br>handler = urllib2.HTTPCookieProcessor(cookie)</p>
-<p>#通过handler来构建opener<br>opener = urllib2.build_opener(handler)</p>
-<p>#创建一个请求，原理同urllib2的urlopen<br>response = opener.open(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)</p>
-<p>#保存cookie到文件<br>cookie.save(ignore_discard=True,ignore_expires=True)</p>
-<p>#从文件中获取Cookie并访问</p>
-<p>#创建MozillaCookieJar实例对象<br>cookie = cookielib.MozillaCookieJar()</p>
-<p>#从文件中读取cookie内容到变量<br>cookie.load(‘cookie.txt’,ignore_discard=True,ignore_expires=True)</p>
-<p>#创建请求的request<br>request = urllib2.Request(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)</p>
-<p>#利用urllib2的build_opener方法创建一个opener<br>opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))<br>response = opener.open(request)<br>print response.read()</p>
-<p>“””</p>
-<p>#利用cookie模拟网站登录<br>filename = ‘cookie.txt’</p>
-<p>#声明一个MozillaCookieJar对象实例来保存cookie，之后写入文件<br>cookie = cookielib.MozillaCookieJar(filename)<br>opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))<br>postdata = urllib.urlencode({<br>    ‘stuid’:’201200131012’,<br>    ‘pwd’:’23342321’<br>})</p>
-<p>#登陆教务系统的URL<br>loginUrl = ‘<a href="http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bks_login2.login" target="_blank" rel="external">http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bks_login2.login</a>‘</p>
-<p>#模拟登陆，并把cookie保存到变量<br>result = opener.open(loginUrl,postdata)</p>
-<p>#保存cookie到cookie.txt中<br>cookie.save(ignore_discard=True,ignore_expires=True)</p>
-<p>#利用cookie请求访问另一个网址，此网址是成绩查询网址<br>gradeUrl = ‘<a href="http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre" target="_blank" rel="external">http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre</a>‘</p>
-<p>#请求访问成绩查询网址<br>result = opener.open(gradeUrl)<br>print result.read()<br>“””</p>
+        <p>编写一个程序，读取邮箱数据，当遇到一个以From开头的文本行，使用split函数将该行子分解成单词。我们需要抽取From开头的行中第二个单词，即发信人<br>From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008<br>解析以From开头的行，打印出每行中第二个单词，还可以统计发信人数，在结尾输出总数。</p>
+<p>代码如下：<br>fname = raw_input(“Enter file name: “)<br>if len(fname) &lt; 1 : fname = “mbox-short.txt”<br>fh = open(fname)<br>count = 0<br>for line in fh:<br>    line = line.rstrip()<br>    if not line.startswith(‘From ‘) : continue<br>    words = line.split()<br>    count = count + 1<br>    print words[1]<br>print “There were”, count, “lines in the file with From as the first word”</p>
 
       
     </div>
@@ -349,17 +306,13 @@ Cookielib
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/06/23/Python  0/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2016/07/11/Assignment 8.4/" rel="next" title="Assignment 8.4">
+                <i class="fa fa-chevron-left"></i> Assignment 8.4
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/04/weight/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -427,7 +380,7 @@ Cookielib
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">13</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -459,7 +412,7 @@ Cookielib
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#title-Cookielib"><span class="nav-number">1.</span> <span class="nav-text"> title: Cookielib</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#coding-utf-8"><span class="nav-number"></span> <span class="nav-text">-- coding: utf-8 --</span></a></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>

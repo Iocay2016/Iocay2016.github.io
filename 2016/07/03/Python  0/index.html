@@ -84,28 +84,34 @@
 
 
 
-<meta name="description" content="title: Assignment 6.5 &amp;gt;
-
-使用find方法和字符串切片，提取出字符串中冒号后面的部分，然后使用float函数，将提取出来的字符串转换为浮点数
-
-text = “X-DSPAM-Confidence:    0.8475”pos = text.find(‘:’)host = float(text[pos+1:])print host">
+<meta name="description" content="#练习册000编写一个程序，让微信右上角显示一个数字
+代码如下：
+-- coding: utf-8 --from PIL import Image, ImageDraw, ImageFont, ImageColordef add_num(img):
+# 创建一个Draw对象
+draw = ImageDraw.Draw(img)
+# 创建一个 Font
+myfont = ImageFont.true">
 <meta property="og:type" content="article">
-<meta property="og:title" content="见见的空间">
-<meta property="og:url" content="http://yoursite.com/2016/07/11/Assignment 6.5/index.html">
+<meta property="og:title" content="practice 000">
+<meta property="og:url" content="http://yoursite.com/2016/07/03/Python  0/index.html">
 <meta property="og:site_name" content="见见的空间">
-<meta property="og:description" content="title: Assignment 6.5 &amp;gt;
-
-使用find方法和字符串切片，提取出字符串中冒号后面的部分，然后使用float函数，将提取出来的字符串转换为浮点数
-
-text = “X-DSPAM-Confidence:    0.8475”pos = text.find(‘:’)host = float(text[pos+1:])print host">
-<meta property="og:updated_time" content="2016-07-13T11:38:49.824Z">
+<meta property="og:description" content="#练习册000编写一个程序，让微信右上角显示一个数字
+代码如下：
+-- coding: utf-8 --from PIL import Image, ImageDraw, ImageFont, ImageColordef add_num(img):
+# 创建一个Draw对象
+draw = ImageDraw.Draw(img)
+# 创建一个 Font
+myfont = ImageFont.true">
+<meta property="og:updated_time" content="2016-07-14T04:54:51.364Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="见见的空间">
-<meta name="twitter:description" content="title: Assignment 6.5 &amp;gt;
-
-使用find方法和字符串切片，提取出字符串中冒号后面的部分，然后使用float函数，将提取出来的字符串转换为浮点数
-
-text = “X-DSPAM-Confidence:    0.8475”pos = text.find(‘:’)host = float(text[pos+1:])print host">
+<meta name="twitter:title" content="practice 000">
+<meta name="twitter:description" content="#练习册000编写一个程序，让微信右上角显示一个数字
+代码如下：
+-- coding: utf-8 --from PIL import Image, ImageDraw, ImageFont, ImageColordef add_num(img):
+# 创建一个Draw对象
+draw = ImageDraw.Draw(img)
+# 创建一个 Font
+myfont = ImageFont.true">
 
 
 
@@ -126,9 +132,9 @@ text = “X-DSPAM-Confidence:    0.8475”pos = text.find(‘:’)host = float(t
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/07/11/Assignment 6.5/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/03/Python  0/"/>
 
-  <title>  | 见见的空间 </title>
+  <title> practice 000 | 见见的空间 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -248,7 +254,7 @@ text = “X-DSPAM-Confidence:    0.8475”pos = text.find(‘:’)host = float(t
             
             
               
-                
+                practice 000
               
             
           </h1>
@@ -260,8 +266,8 @@ text = “X-DSPAM-Confidence:    0.8475”pos = text.find(‘:’)host = float(t
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-11T19:05:01+08:00" content="2016-07-11">
-              2016-07-11
+            <time itemprop="dateCreated" datetime="2016-07-03T22:46:25+08:00" content="2016-07-03">
+              2016-07-03
             </time>
           </span>
 
@@ -288,12 +294,19 @@ text = “X-DSPAM-Confidence:    0.8475”pos = text.find(‘:’)host = float(t
       
 
       
-        <hr>
-<h2 id="title-Assignment-6-5"><a href="#title-Assignment-6-5" class="headerlink" title=" title: Assignment 6.5"></a> title: Assignment 6.5</h2><p> &gt;</p>
-<blockquote>
-<p>使用find方法和字符串切片，提取出字符串中冒号后面的部分，然后使用float函数，将提取出来的字符串转换为浮点数</p>
-</blockquote>
-<p>text = “X-DSPAM-Confidence:    0.8475”<br>pos = text.find(‘:’)<br>host = float(text[pos+1:])<br>print host</p>
+        <p>#练习册000<br>编写一个程序，让微信右上角显示一个数字</p>
+<p>代码如下：</p>
+<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><p>from PIL import Image, ImageDraw, ImageFont, ImageColor<br>def add_num(img):</p>
+<pre><code># 创建一个Draw对象
+draw = ImageDraw.Draw(img)
+# 创建一个 Font
+myfont = ImageFont.truetype(&apos;C:/windows/fonts/Arial.ttf&apos;, size=40)
+fillcolor = ImageColor.colormap.get(&apos;red&apos;)
+width, height = img.size
+draw.text((width-30, 0), &apos;1&apos;, font=myfont, fill=fillcolor)
+img.save(&apos;result.jpg&apos;, &apos;jpeg&apos;)
+return 0
+</code></pre><p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    image = Image.open(‘test.jpg’)<br>    add_num(image)</p>
 
       
     </div>
@@ -319,16 +332,16 @@ text = “X-DSPAM-Confidence:    0.8475”pos = text.find(‘:’)host = float(t
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/09/Assignment 4.6/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2016/07/02/right-triangle/" rel="next" title="Assignment 2.3">
+                <i class="fa fa-chevron-left"></i> Assignment 2.3
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/12/Assignment 7.1/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/07/04/Cookielib/" rel="prev" title="Cookielib">
+                Cookielib <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -397,7 +410,7 @@ text = “X-DSPAM-Confidence:    0.8475”pos = text.find(‘:’)host = float(t
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">13</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -429,7 +442,7 @@ text = “X-DSPAM-Confidence:    0.8475”pos = text.find(‘:’)host = float(t
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#title-Assignment-6-5"><span class="nav-number">1.</span> <span class="nav-text"> title: Assignment 6.5</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#coding-utf-8"><span class="nav-number">1.</span> <span class="nav-text">-- coding: utf-8 --</span></a></li></ol></div>
             
           </div>
         </section>
