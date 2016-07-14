@@ -248,8 +248,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/07/13/Assignment 8.4/" itemprop="url">
-                  Assignment 8.4
+                <a class="post-title-link" href="/2016/07/12/Assignment 8.5/" itemprop="url">
+                  Assignment 8.5
                 </a>
               
             
@@ -262,8 +262,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-13T15:56:47+08:00" content="2016-07-13">
-              2016-07-13
+            <time itemprop="dateCreated" datetime="2016-07-12T22:46:25+08:00" content="2016-07-12">
+              2016-07-12
             </time>
           </span>
 
@@ -292,8 +292,8 @@
       
         
           
-            <p>编写一个程序，打开romeo.txt文件，按行读取。对每一行使用split函数，将其分解成一系列的单词列表。对于每一个单词，检查它是否已经存在于列表之中，若单词还未出现在列表中，把它添加进来<br>按字母顺序输出最终的单词清单</p>
-<p>代码如下：<br>fname = raw_input(“Enter file name: “)<br>fh = open(fname)<br>text = fh.read()<br>words = text.split()<br>lst = list()<br>for word in words:<br>       lst.append(word)<br>lst = sorted(set(words))<br>print lst</p>
+            <p>编写一个程序，读取邮箱数据，当遇到一个以From开头的文本行，使用split函数将该行子分解成单词。我们需要抽取From开头的行中第二个单词，即发信人<br>From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008<br>解析以From开头的行，打印出每行中第二个单词，还可以统计发信人数，在结尾输出总数。</p>
+<p>代码如下：<br>fname = raw_input(“Enter file name: “)<br>if len(fname) &lt; 1 : fname = “mbox-short.txt”<br>fh = open(fname)<br>count = 0<br>for line in fh:<br>       line = line.rstrip()<br>       if not line.startswith(‘From ‘) : continue<br>       words = line.split()<br>       count = count + 1<br>       print words[1]<br>print “There were”, count, “lines in the file with From as the first word”</p>
 
           
         
@@ -343,8 +343,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/07/12/Assignment 8.5/" itemprop="url">
-                  Assignment 8.5
+                <a class="post-title-link" href="/2016/07/11/Assignment 8.4/" itemprop="url">
+                  Assignment 8.4
                 </a>
               
             
@@ -357,8 +357,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-12T22:46:25+08:00" content="2016-07-12">
-              2016-07-12
+            <time itemprop="dateCreated" datetime="2016-07-11T22:46:25+08:00" content="2016-07-11">
+              2016-07-11
             </time>
           </span>
 
@@ -386,11 +386,12 @@
 
       
         
-          
-            <p>编写一个程序，读取邮箱数据，当遇到一个以From开头的文本行，使用split函数将该行子分解成单词。我们需要抽取From开头的行中第二个单词，即发信人<br>From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008<br>解析以From开头的行，打印出每行中第二个单词，还可以统计发信人数，在结尾输出总数。</p>
-<p>代码如下：<br>fname = raw_input(“Enter file name: “)<br>if len(fname) &lt; 1 : fname = “mbox-short.txt”<br>fh = open(fname)<br>count = 0<br>for line in fh:<br>       line = line.rstrip()<br>       if not line.startswith(‘From ‘) : continue<br>       words = line.split()<br>       count = count + 1<br>       print words[1]<br>print “There were”, count, “lines in the file with From as the first word”</p>
-
-          
+          <p>编写一个程序，打开romeo.txt文件，按行读取。对每一行使用split函数，将其分解成一系列的单词列表。对于每一个单词，检查它是否已经存在于列表之中，若单词还未出现在列表中，把它添加进来<br>按字母顺序输出最终的单词清单<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/11/Assignment 8.4/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
