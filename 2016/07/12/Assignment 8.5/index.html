@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="见见的空间">
 <meta property="og:description" content="编写一个程序，读取邮箱数据，当遇到一个以From开头的文本行，使用split函数将该行子分解成单词。我们需要抽取From开头的行中第二个单词，即发信人From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008解析以From开头的行，打印出每行中第二个单词，还可以统计发信人数，在结尾输出总数。
 代码如下：fname = raw_input(“Ent">
-<meta property="og:updated_time" content="2016-07-14T04:51:23.674Z">
+<meta property="og:updated_time" content="2016-07-14T05:22:55.901Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Assignment 8.5">
 <meta name="twitter:description" content="编写一个程序，读取邮箱数据，当遇到一个以From开头的文本行，使用split函数将该行子分解成单词。我们需要抽取From开头的行中第二个单词，即发信人From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008解析以From开头的行，打印出每行中第二个单词，还可以统计发信人数，在结尾输出总数。
@@ -290,7 +290,7 @@
 
       
         <p>编写一个程序，读取邮箱数据，当遇到一个以From开头的文本行，使用split函数将该行子分解成单词。我们需要抽取From开头的行中第二个单词，即发信人<br>From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008<br>解析以From开头的行，打印出每行中第二个单词，还可以统计发信人数，在结尾输出总数。</p>
-<p>代码如下：<br>fname = raw_input(“Enter file name: “)<br>if len(fname) &lt; 1 : fname = “mbox-short.txt”<br>fh = open(fname)<br>count = 0<br>for line in fh:<br>    line = line.rstrip()<br>    if not line.startswith(‘From ‘) : continue<br>    words = line.split()<br>    count = count + 1<br>    print words[1]<br>print “There were”, count, “lines in the file with From as the first word”</p>
+<p>代码如下：<br>fname = raw_input(“Enter file name: “)<br>if len(fname) &lt; 1 : fname = “mbox-short.txt”<br>fh = open(fname)<br>count = 0<br>for line in fh:<br>       line = line.rstrip()<br>       if not line.startswith(‘From ‘) : continue<br>       words = line.split()<br>       count = count + 1<br>       print words[1]<br>print “There were”, count, “lines in the file with From as the first word”</p>
 
       
     </div>
