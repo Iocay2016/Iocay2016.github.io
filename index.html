@@ -483,12 +483,13 @@
 
       
         
-          
-            <p>spamave</p>
-<p>编写一个程序，让用户输入文件名，然后读取文件，按行的形式进行查看</p>
-<p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">fname = raw_input(&apos;Enter the file name: &apos;)</span><br><span class="line">try:</span><br><span class="line">    fhand = open(fname)</span><br><span class="line">except:</span><br><span class="line">    print &apos;File cannot be opened:&apos;, fname</span><br><span class="line">    exit()</span><br><span class="line">count = 0</span><br><span class="line">total = 0</span><br><span class="line">for line in fhand:</span><br><span class="line">    words = line.split()</span><br><span class="line">    if len(words) != 2 : continue</span><br><span class="line">    if words[0] != &apos;X-DSPAM-Confidence:&apos; : continue</span><br><span class="line">    try:</span><br><span class="line">        conf = float(words[1])</span><br><span class="line">    except:</span><br><span class="line">        continue</span><br><span class="line">    count = count + 1</span><br><span class="line">    total = total + conf</span><br><span class="line">average = total / count</span><br><span class="line">print &apos;Average spam confidence:&apos;, average</span><br></pre></td></tr></table></figure></p>
-
-          
+          <p>spamave</p>
+<p>编写一个程序，让用户输入文件名，然后读取文件，按行的形式进行查看<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/10/Assignment 7.2/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -579,12 +580,12 @@
 
       
         
-          
-            <p>编写一个程序，读取一个文件，以大写方式逐行打印出文件内容</p>
-<p>代码如下：<br>fname = raw_input(“Enter fsile name: “)</p>
-<p>#缺省值 直接按空格照样可以work<br>if len(fname) == 0:<br>    fname = ‘mbox-short.txt’<br>fh = open(fname)<br>for line in fh:<br>    line = line.upper().rstrip()<br>    print line</p>
-
-          
+          <p>编写一个程序，读取一个文件，以大写方式逐行打印出文件内容<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/10/Assignment 7.1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -675,11 +676,12 @@
 
       
         
-          
-            <p>使用find方法和字符串切片，提取出字符串中冒号后面的部分，然后使用float函数，将提取出来的字符串转换为浮点数</p>
-<p>代码如下：<br>text = “X-DSPAM-Confidence:    0.8475”<br>pos = text.find(‘:’)<br>host = float(text[pos+1:])<br>print host</p>
-
-          
+          <p>使用find方法和字符串切片，提取出字符串中冒号后面的部分，然后使用float函数，将提取出来的字符串转换为浮点数<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/09/Assignment 6.5/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -770,11 +772,12 @@
 
       
         
-          
-            <p>重写之前的工资计算程序，加班时间的工资按原工资的150%计算。创建一个computepay函数，包含两个参数hours和rate</p>
-<p>代码如下：<br>def computepay(h,r):<br>    if hrs&lt;=40:<br>        pay = h<em>r<br>    else:<br>        pay = h</em>r + 1.5<em>r</em>(h-40)<br>    return 498.75<br>hrs = raw_input(“Enter Hours:”)<br>h = float(hrs)<br>rate = raw_input(“Enter Rate:”)<br>r = float(rate)<br>p = computepay(10,20)<br>print p</p>
-
-          
+          <p>重写之前的工资计算程序，加班时间的工资按原工资的150%计算。创建一个computepay函数，包含两个参数hours和rate<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/07/Assignment 4.6/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -865,12 +868,12 @@
 
       
         
-          
-            <p>编写一个程序，提示分数在0.0和1.0之间。如果分数超出这个范围则打印出错误。如 果分数在0.0和1.0之间，使用下面的表格打印分数：<br>Score            Grade &gt;=    0.9                    A &gt;=    0.8                    B &gt;=    0.7                    C &gt;=    0.6                    D &lt;    0.6                F<br>Enter    score:    0.95 A<br>Enter    score:    perfect Bad    score<br>Enter    score:    10.0 Bad    score<br>Enter    score:    0.75 C<br>Enter    score:    0.5 </p>
-<p>代码如下：<br>try:<br>    score = raw_input(“Enter Score: “)<br>    s = float(score)<br>except:<br>    print “Done”<br>    quit()</p>
-<p>if s&gt;=0.9:<br>    print “A”<br>elif s&gt;=0.8:<br>    print “B”<br>elif s&gt;=0.7:<br>    print “C”<br>elif s&gt;=0.6:<br>    print “D”<br>else:<br>    print “F”</p>
-
-          
+          <p>编写一个程序，提示分数在0.0和1.0之间。如果分数超出这个范围则打印出错误。如 果分数在0.0和1.0之间，使用下面的表格打印分数<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/05/Assignment 3.3./#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -961,12 +964,12 @@
 
       
         
-          
-            <p>重写薪水计算公式，如果员工工作时间超过40小时，按平常薪水的1.5倍支付<br>运用try和except重写支付程序，让程序可以正常处理非数字输入的情况，如果是非数 字输入，打印消息并退出程序</p>
-<p>代码如下：<br>try:<br>    hrs = raw_input(“Enter Hours:”)<br>    h = float(hrs)<br>    hrs = raw_input(“Enter Rate:”)<br>    r = float(hrs)<br>except:<br>    print “Done”<br>    quit()</p>
-<p>if h &lt;= 40:<br>    pay = h<em>r<br>else:<br>    pay = (40</em>r)+(1.5<em>r</em>(h-40))<br>print pay</p>
-
-          
+          <p>重写薪水计算公式，如果员工工作时间超过40小时，按平常薪水的1.5倍支付<br>运用try和except重写支付程序，让程序可以正常处理非数字输入的情况，如果是非数 字输入，打印消息并退出程序<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/05/Assignment 3.1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1057,37 +1060,12 @@
 
       
         
-          
-            <p>Cookielib</p>
-<p>代码如下：</p>
-<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><p>import urllib2<br>import cookielib</p>
-<p>#获取Cookie保存到变量</p>
-<p>#声明一个CookieJar对象实例来保存cookie<br>cookie = cookielib.CookieJar()</p>
-<p>#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器<br>handler = urllib2.HTTPCookieProcessor(cookie)</p>
-<p>#通过handler来构建opener<br>opener = urllib2.build_opener(handler)</p>
-<p>#此处的open方法同urllib2的urlopen方法，也可以传入request<br>response = opener.open(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)<br>for item in cookie:<br>    print ‘Name = ‘+item.name<br>    print ‘Value = ‘+item.value</p>
-<p>#保存Cookie到文件</p>
-<p>#设置保存cookie的文件，同级目录下的cookie.txt<br>filename = ‘cookie.txt’</p>
-<p>#声明一个MozillaCookieJar对象实例来保存cookie，之后写入文件<br>cookie = cookielib.MozillaCookieJar(filename)</p>
-<p>#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器<br>handler = urllib2.HTTPCookieProcessor(cookie)</p>
-<p>#通过handler来构建opener<br>opener = urllib2.build_opener(handler)</p>
-<p>#创建一个请求，原理同urllib2的urlopen<br>response = opener.open(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)</p>
-<p>#保存cookie到文件<br>cookie.save(ignore_discard=True,ignore_expires=True)</p>
-<p>#从文件中获取Cookie并访问</p>
-<p>#创建MozillaCookieJar实例对象<br>cookie = cookielib.MozillaCookieJar()</p>
-<p>#从文件中读取cookie内容到变量<br>cookie.load(‘cookie.txt’,ignore_discard=True,ignore_expires=True)</p>
-<p>#创建请求的request<br>request = urllib2.Request(‘<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>‘)</p>
-<p>#利用urllib2的build_opener方法创建一个opener<br>opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))<br>response = opener.open(request)<br>print response.read()</p>
-<p>“””</p>
-<p>#利用cookie模拟网站登录<br>filename = ‘cookie.txt’</p>
-<p>#声明一个MozillaCookieJar对象实例来保存cookie，之后写入文件<br>cookie = cookielib.MozillaCookieJar(filename)<br>opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))<br>postdata = urllib.urlencode({<br>    ‘stuid’:’201200131012’,<br>    ‘pwd’:’23342321’<br>})</p>
-<p>#登陆教务系统的URL<br>loginUrl = ‘<a href="http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bks_login2.login" target="_blank" rel="external">http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bks_login2.login</a>‘</p>
-<p>#模拟登陆，并把cookie保存到变量<br>result = opener.open(loginUrl,postdata)</p>
-<p>#保存cookie到cookie.txt中<br>cookie.save(ignore_discard=True,ignore_expires=True)</p>
-<p>#利用cookie请求访问另一个网址，此网址是成绩查询网址<br>gradeUrl = ‘<a href="http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre" target="_blank" rel="external">http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre</a>‘</p>
-<p>#请求访问成绩查询网址<br>result = opener.open(gradeUrl)<br>print result.read()<br>“””</p>
-
-          
+          <p>Cookielib<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/04/Cookielib/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1197,22 +1175,12 @@
 
       
         
-          
-            <p>#练习册000<br>编写一个程序，让微信右上角显示一个数字</p>
-<p>代码如下：</p>
-<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><p>from PIL import Image, ImageDraw, ImageFont, ImageColor<br>def add_num(img):</p>
-<pre><code># 创建一个Draw对象
-draw = ImageDraw.Draw(img)
-# 创建一个 Font
-myfont = ImageFont.truetype(&apos;C:/windows/fonts/Arial.ttf&apos;, size=40)
-fillcolor = ImageColor.colormap.get(&apos;red&apos;)
-width, height = img.size
-draw.text((width-30, 0), &apos;1&apos;, font=myfont, fill=fillcolor)
-img.save(&apos;result.jpg&apos;, &apos;jpeg&apos;)
-return 0
-</code></pre><p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    image = Image.open(‘test.jpg’)<br>    add_num(image)</p>
-
-          
+          <p>#练习册000<br>编写一个程序，让微信右上角显示一个数字<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/03/Python  0/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
