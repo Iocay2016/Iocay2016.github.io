@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="python爬虫," />
+  <meta name="keywords" content="python," />
 
 
 
@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="Cookielib">
+<meta name="description" content="编写一个程序， 查找以下形式的文本行。 使用正则表达式的findall()函数抽取每一行中的数字， 计算并输出数字的平均值">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Cookielib">
-<meta property="og:url" content="http://yoursite.com/2016/07/04/Cookielib/index.html">
+<meta property="og:title" content="Assignment 11.2">
+<meta property="og:url" content="http://yoursite.com/2016/07/17/Assignment 11.2/index.html">
 <meta property="og:site_name" content="见见的空间">
-<meta property="og:description" content="Cookielib">
-<meta property="og:updated_time" content="2016-07-14T06:46:45.927Z">
+<meta property="og:description" content="编写一个程序， 查找以下形式的文本行。 使用正则表达式的findall()函数抽取每一行中的数字， 计算并输出数字的平均值">
+<meta property="og:updated_time" content="2016-07-17T05:55:24.970Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cookielib">
-<meta name="twitter:description" content="Cookielib">
+<meta name="twitter:title" content="Assignment 11.2">
+<meta name="twitter:description" content="编写一个程序， 查找以下形式的文本行。 使用正则表达式的findall()函数抽取每一行中的数字， 计算并输出数字的平均值">
 
 
 
@@ -114,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/07/04/Cookielib/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/17/Assignment 11.2/"/>
 
-  <title> Cookielib | 见见的空间 </title>
+  <title> Assignment 11.2 | 见见的空间 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -256,7 +256,7 @@
             
             
               
-                Cookielib
+                Assignment 11.2
               
             
           </h1>
@@ -268,8 +268,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-04T22:46:25+08:00" content="2016-07-04">
-              2016-07-04
+            <time itemprop="dateCreated" datetime="2016-07-17T13:46:25+08:00" content="2016-07-17">
+              2016-07-17
             </time>
           </span>
 
@@ -282,8 +282,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/爬虫/" itemprop="url" rel="index">
-                    <span itemprop="name">爬虫</span>
+                  <a href="/categories/Assignment/" itemprop="url" rel="index">
+                    <span itemprop="name">Assignment</span>
                   </a>
                 </span>
 
@@ -298,8 +298,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/07/04/Cookielib/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/04/Cookielib/" itemprop="commentsCount"></span>
+                <a href="/2016/07/17/Assignment 11.2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/17/Assignment 11.2/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -309,7 +309,7 @@
 
           
           
-             <span id="/2016/07/04/Cookielib/" class="leancloud_visitors" data-flag-title="Cookielib">
+             <span id="/2016/07/17/Assignment 11.2/" class="leancloud_visitors" data-flag-title="Assignment 11.2">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -331,7 +331,7 @@
       
 
       
-        <p>Cookielib<br> <a id="more"></a><br>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line">import urllib2</span><br><span class="line">import cookielib</span><br><span class="line"></span><br><span class="line">#获取Cookie保存到变量</span><br><span class="line">#声明一个CookieJar对象实例来保存cookie</span><br><span class="line">cookie = cookielib.CookieJar()</span><br><span class="line">#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器</span><br><span class="line">handler = urllib2.HTTPCookieProcessor(cookie)</span><br><span class="line">#通过handler来构建opener</span><br><span class="line">opener = urllib2.build_opener(handler)</span><br><span class="line">#此处的open方法同urllib2的urlopen方法，也可以传入request</span><br><span class="line">response = opener.open(&apos;http://www.baidu.com&apos;)</span><br><span class="line">for item in cookie:</span><br><span class="line">    print &apos;Name = &apos;+item.name</span><br><span class="line">    print &apos;Value = &apos;+item.value</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#保存Cookie到文件</span><br><span class="line">#设置保存cookie的文件，同级目录下的cookie.txt</span><br><span class="line">filename = &apos;cookie.txt&apos;</span><br><span class="line">#声明一个MozillaCookieJar对象实例来保存cookie，之后写入文件</span><br><span class="line">cookie = cookielib.MozillaCookieJar(filename)</span><br><span class="line">#利用urllib2库的HTTPCookieProcessor对象来创建cookie处理器</span><br><span class="line">handler = urllib2.HTTPCookieProcessor(cookie)</span><br><span class="line">#通过handler来构建opener</span><br><span class="line">opener = urllib2.build_opener(handler)</span><br><span class="line">#创建一个请求，原理同urllib2的urlopen</span><br><span class="line">response = opener.open(&apos;http://www.baidu.com&apos;)</span><br><span class="line">#保存cookie到文件</span><br><span class="line">cookie.save(ignore_discard=True,ignore_expires=True)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#从文件中获取Cookie并访问</span><br><span class="line">#创建MozillaCookieJar实例对象</span><br><span class="line">cookie = cookielib.MozillaCookieJar()</span><br><span class="line">#从文件中读取cookie内容到变量</span><br><span class="line">cookie.load(&apos;cookie.txt&apos;,ignore_discard=True,ignore_expires=True)</span><br><span class="line">#创建请求的request</span><br><span class="line">request = urllib2.Request(&apos;http://www.baidu.com&apos;)</span><br><span class="line">#利用urllib2的build_opener方法创建一个opener</span><br><span class="line">opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))</span><br><span class="line">response = opener.open(request)</span><br><span class="line">print response.read()</span><br><span class="line"></span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">#利用cookie模拟网站登录</span><br><span class="line">filename = &apos;cookie.txt&apos;</span><br><span class="line">#声明一个MozillaCookieJar对象实例来保存cookie，之后写入文件</span><br><span class="line">cookie = cookielib.MozillaCookieJar(filename)</span><br><span class="line">opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))</span><br><span class="line">postdata = urllib.urlencode(&#123;</span><br><span class="line">    &apos;stuid&apos;:&apos;201200131012&apos;,</span><br><span class="line">    &apos;pwd&apos;:&apos;23342321&apos;</span><br><span class="line">&#125;)</span><br><span class="line">#登陆教务系统的URL</span><br><span class="line">loginUrl = &apos;http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bks_login2.login&apos;</span><br><span class="line">#模拟登陆，并把cookie保存到变量</span><br><span class="line">result = opener.open(loginUrl,postdata)</span><br><span class="line">#保存cookie到cookie.txt中</span><br><span class="line">cookie.save(ignore_discard=True,ignore_expires=True)</span><br><span class="line">#利用cookie请求访问另一个网址，此网址是成绩查询网址</span><br><span class="line">gradeUrl = &apos;http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre&apos;</span><br><span class="line">#请求访问成绩查询网址</span><br><span class="line">result = opener.open(gradeUrl)</span><br><span class="line">print result.read()</span><br><span class="line">&quot;&quot;&quot;</span><br></pre></td></tr></table></figure></p>
+        <p>编写一个程序， 查找以下形式的文本行。 使用正则表达式的findall()函数抽取每一行中的数字， 计算并输出数字的平均值<br><a id="more"></a><br>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import re</span><br><span class="line">hand = open(&apos;mbox-short.txt&apos;)</span><br><span class="line">nums = list()</span><br><span class="line">for line in hand:</span><br><span class="line">    line = line.rstrip()</span><br><span class="line">    x = re.findall(&apos;New Revision: ([0-9]+)&apos;,line)</span><br><span class="line">    if len(x) == 1 :</span><br><span class="line">        val = float(x[0])</span><br><span class="line">        nums.append(val)</span><br><span class="line">print sum(nums)/len(nums)</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -370,7 +370,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/python爬虫/" rel="tag">#python爬虫</a>
+            <a href="/tags/python/" rel="tag">#python</a>
           
         </div>
       
@@ -379,17 +379,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/03/Python  0/" rel="next" title="practice 000">
-                <i class="fa fa-chevron-left"></i> practice 000
+              <a href="/2016/07/16/Assignment 10.2/" rel="next" title="Assignment 10.2">
+                <i class="fa fa-chevron-left"></i> Assignment 10.2
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/05/Assignment 3.1/" rel="prev" title="Assignment 3.1">
-                Assignment 3.1 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -415,8 +411,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/07/04/Cookielib/"
-           data-title="Cookielib" data-url="http://yoursite.com/2016/07/04/Cookielib/">
+      <div class="ds-thread" data-thread-key="2016/07/17/Assignment 11.2/"
+           data-title="Assignment 11.2" data-url="http://yoursite.com/2016/07/17/Assignment 11.2/">
       </div>
     
   </div>
